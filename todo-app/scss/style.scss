@@ -1,0 +1,104 @@
+@import "variables";
+@import "mixin";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: $font-Arimo;
+  letter-spacing: 0.5px;
+  background-color: $gunmetal;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  @include df-jc-ac;
+  flex-direction: column;
+}
+header {
+  width: 50%;
+  @include df-jc-ac;
+  flex-direction: column;
+  h3 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: $white;
+    margin: 5rem 0;
+  }
+  .add-todo {
+    width: 100%;
+    padding: 20px 5px;
+    @include df-jc-ac;
+    position: relative;
+    input {
+      width: 100%;
+      min-width: 300px;
+      height: 50px;
+      border: none;
+      border-radius: 25px;
+      padding-left: 20px;
+      font-size: 1rem;
+    }
+    button {
+      width: 60px;
+      height: 50px;
+      background-color: transparent;
+      border: none;
+      position: absolute;
+      right: 5px;
+      color: $mtl-sea;
+      border-left: 2px solid $lg-gray;
+      border-radius: 0 25px 25px 0;
+      cursor: pointer;
+      &:hover {
+        background-color: $lg-blue;
+        color: $white;
+      }
+    }
+  }
+}
+.content {
+  width: 100%;
+  @include df-jc-ac;
+  flex-direction: column;
+}
+.todo-list {
+  width: 100%;
+  @include df-jc-ac;
+  flex-direction: column;
+  margin-top: 2rem;
+  .todo {
+    width: 100%;
+    display: flex;
+    background-color: $lg-gray;
+    margin-bottom: 1rem;
+    @include df-ac;
+    span {
+      width: 70%;
+      height: 100%;
+      border-right: 2px solid $lg-blue;
+      padding: 30px;
+    }
+    .todo-btn {
+      width: 10%;
+      padding: 30px 0;
+      @include df-jc-ac;
+      border-right: 2px solid $lg-blue;
+      font-size: 1.3rem;
+      cursor: pointer;
+      &:hover {
+        color: $mtl-sea;
+      }
+    }
+  }
+}
+.edit-input{
+  width: calc(70% - 40px);
+  height: 50px;
+  margin:0 20px;
+  padding-left: 10px;
+}

@@ -1,0 +1,13 @@
+@mixin df-jc-ac {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin df-ac {
+    display: flex;
+    align-items: center;
+}
+@mixin df-jc {
+    display: flex;
+    justify-content: center;
+}
