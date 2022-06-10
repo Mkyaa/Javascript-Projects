@@ -89,14 +89,17 @@ const addTodo = () => {
     if (toDo === '') {
         alert('Please enter a todo')
     }
-    toDos.push({
-        toDo: toDo,
-        check: false
-    })
-    localStorage.setItem('toDos', JSON.stringify(toDos))
-    addInput.value = ''
-    toDoList.innerHTML = ''
-    startingPage(toDos)
+    else{
+        toDos.push({
+            toDo: toDo,
+            check: false
+        })
+        localStorage.setItem('toDos', JSON.stringify(toDos))
+        addInput.value = ''
+        toDoList.innerHTML = ''
+        startingPage(toDos)
+    }
+    
 }
 
 addBtn.addEventListener('click', addTodo)
