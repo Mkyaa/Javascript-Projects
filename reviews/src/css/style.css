@@ -15,7 +15,14 @@ body{
     justify-content: center;
     align-items: center;
 }
+#title{
+    font-size: 3rem;
+    color: var(--blue);
+    font-weight: 600;
+    text-align: center;
+}
 #box{
+    margin-top: 150px;
     box-shadow: 0 0 15px 5px #ccc ;
     min-width: 550px;
     border-radius:10px;
