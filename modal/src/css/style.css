@@ -1,12 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    font-family:'Arimo', sans-serif;
+
+body {
+    font-family: 'Arimo', sans-serif;
 }
-.container{
+
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,13 +20,14 @@ body{
     background-position: center;
     background-repeat: no-repeat;
 }
-.modal{
+
+.modal {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 0;
     left: 0;
@@ -32,7 +35,8 @@ body{
     opacity: 0;
     visibility: hidden;
 }
-.modal-content{
+
+.modal-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,22 +47,26 @@ body{
     border-radius: 10px;
     position: relative;
 }
-.modal-title{
+
+.modal-title {
     font-size: 2rem;
-    color: rgba(0,0,0,0.8);
+    color: rgba(0, 0, 0, 0.8);
     font-weight: bold;
 }
-.icon-cancel{
+
+.icon-cancel {
     position: absolute;
     top: 20px;
     right: 20px;
     font-size: 2rem;
     cursor: pointer;
 }
-.icon-cancel:hover{
+
+.icon-cancel:hover {
     color: rgba(207, 62, 62, 0.8)
 }
-.hero{
+
+.hero {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -67,14 +75,16 @@ body{
     height: 30%;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
 }
-.title{
+
+.title {
     font-size: 2rem;
-    color: rgba(0,0,0,0.8);
+    color: rgba(0, 0, 0, 0.8);
     font-weight: bold;
 }
-.open-model-btn{
+
+.open-model-btn {
     border: none;
     width: 150px;
     height: 40px;
@@ -82,8 +92,9 @@ body{
     border-radius: 5px;
     margin-top: 50px;
 }
+
 /* modal open/close */
-.modal-open{
+.modal-open {
     opacity: 1;
     visibility: visible;
     transition: all 0.3s ease-in-out;
