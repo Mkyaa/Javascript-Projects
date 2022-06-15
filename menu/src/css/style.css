@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comfortaa', cursive;
+    background: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 960px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    margin: 40px 0;
+}
+
+.header h3 {
+    text-align: center;
+    font-size: 28px;
+    color: #4b4747;
+    border-bottom: 2px solid tomato;
+    padding-bottom: 5px;
+}
+
+.header .menu {
+    margin-top: 40px;
+}
+
+.header .menu ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.header .menu ul li {
+    margin: 0 3px;
+    border: 1px solid tomato;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.header .menu ul li:hover {
+    color: rgba(255, 99, 71, 0.8);
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    width: 460px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    margin: 10px 10px;
+}
+
+.menu-text {
+    width: 250px;
+    margin-left: 10px;
+}
+
+.menu-img {
+    border: 2px solid tomato;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.menu-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px 0 10px 0;
+    border-bottom: 1px solid tomato;
+}
+
+.title {
+    font-size: 16px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: tomato;
+}
+
+.desc {
+    font-size: 12px;
+    margin-top: 40px;
+    text-align: justify;
+}
+
+@media screen and (max-width: 977px) {
+    .content {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 478px) {
+    .content {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .menu-item {
+        width: 100%;
+    }
+
+    .menu-img {
+        width: 150px;
+        height: 150px;
+    }
+    .title {
+        font-size: 14px;
+    }
+    .price{
+        font-size: 16px;
+    }
+    .desc{
+        font-size: 10px;
+    }
+}
